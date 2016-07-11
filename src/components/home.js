@@ -9,7 +9,19 @@ const Home = ({visible}) =>
         <span>4:34 PM</span>
         <span>100% <i className='fa fa-battery-full'/></span>
       </div>
-      <span onTouchTap={events.toggleMenu}> toggle menu </span>
+      <div className='card'>
+        <div className='sub-menu'>
+          <i className='fa fa-bars fa-2x' onTouchTap={events.toggleMenu} />
+          <div className='buttons'>
+            <span className='open'> Open </span>
+            <span className='close'> Close </span>
+          </div>
+          <i className='fa fa-plus-circle fa-2x' onTouchTap={events.toggleMenu} />
+        </div>
+      </div>
+      <div className='card'>
+        <span onTouchTap={events.toggleMenu}> toggle menu </span>
+      </div>
     </div>;
 
 export default Home;

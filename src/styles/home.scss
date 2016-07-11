@@ -2,11 +2,48 @@
 
 .app {
   height: 100%;
+  .card {
+    background: radial-gradient(at top, #FCF5E6 30% ,#FCF0DA 50%, #F1D6B3);
+    padding: $default_padding;
+    box-sizing: border-box;
+    height: 4*$unit_height;
+
+    .sub-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .fa {
+        color: $back_color_4;
+      }
+
+      .buttons {
+        box-sizing: border-box;
+        padding: $default_padding;
+        border-radius: $default_padding;
+        background: $buttons_back;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span {
+          line-height: $icon_2x_height - 2 * $default_padding;
+          display: inline-block;
+          padding: $default_padding 4*$default_padding;
+          color: $color_dark;
+        }
+        .open {
+          background: $front_color;
+          border-radius: $default_padding;
+          color: $color_white;
+        }
+      }
+    }
+  }
 
   .topbar {
     font-family: Times;
-    height: $topbar_height;
-    line-height: $topbar_height;
+    height: $unit_height/2;
+    line-height: $unit_height/2;
 
     background: $front_color;
     display: flex;
@@ -14,7 +51,7 @@
     justify-content: space-between;
     padding: 0 $default_padding;
     box-sizing: border-box;
-    color: $text_color_0;
+    color: $color_white;
 
     > span {
       display: inline-block;
