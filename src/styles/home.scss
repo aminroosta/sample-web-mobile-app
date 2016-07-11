@@ -2,18 +2,23 @@
 
 .app {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #F7E5CA;
 
   .card {
     background: radial-gradient(at top, #FCF5E6 30% ,#FCF0DA 50%, #F1D6B3);
     box-sizing: border-box;
+    margin-top: auto;
 
     .sub-menu {
-      padding: $default_padding*3 $default_padding*2;
+      padding: $unit_height*0.5 $default_padding*2;
       padding-bottom: 0;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      height: $unit_height;
       .fa {
         color: $back_color_4;
       }
@@ -27,7 +32,7 @@
         flex-direction: row;
         justify-content: space-between;
         span {
-          line-height: $icon_2x_height - 2 * $default_padding;
+          line-height: 100%;
           display: inline-block;
           padding: $default_padding 4*$default_padding;
           color: $color_dark;
@@ -43,9 +48,8 @@
 
   .user {
     .title {
-      padding: $default_padding;
+      padding: $unit_height*0.25 $default_padding;
       box-sizing: border-box;
-      padding-top: $unit_height*0.5;
       height: $unit_height*2;
       position: relative;
       span {
@@ -75,9 +79,10 @@
 
     .pic {
       position: relative;
+      height: $unit_height*3.5;
       img {
         width: 100%;
-        height: $unit_height*3.5;
+        height: 100%;
       }
       .time {
         position: absolute;
@@ -89,6 +94,31 @@
         text-align: center;
         font-size: $bigger_size;
         color: $color_white;
+      }
+    }/*------------.pic---------------*/
+
+    .accept {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      line-height: $unit_height;
+      padding: $default_padding $default_padding $default_padding 0;
+      box-sizing: border-box;
+      background: $back_color_0;
+      color: $text_color_2;
+      .fa {
+        padding: 0 $default_padding;
+      }
+      button {
+        height: $unit_height;
+        border:none;
+        border-radius: $default_padding;
+        background-color: $front_color;
+        color: $color_white;
+        outline: none;
+        cursor: pointer;
+        font-size: $mid_size;
+        font-weight: bold;
       }
     }
   }

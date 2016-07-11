@@ -19,19 +19,29 @@ const state = {
           name: 'Mark Anderson',
           message: 'Reckon you can rise to any challange? Prove it',
           people: 7,
-          rate: 175,
-          time: new Date()
+          rate: 86,
+          time: new Date(new Date() - 60011*321)
         }
       ]
     }
 };
+
+/* update the times & rates */
+setInterval(() => {
+  state.home.users.forEach(u => {
+    u.time = new Date(u.time*1 + 1000);
+    if(Math.random() < 0.2)
+      u.rate += 1;
+  });
+  controller.update();
+}, 1000);
+
 
 class Controller {
     initialize(component) {
       component.state = state;
       this.update = () => {
         component.setState(state)
-        console.warn(state);
       };
     }
 };

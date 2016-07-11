@@ -8,7 +8,7 @@ const User = ({pic_url, image_url, name, message, people, rate, time})  =>
     <div className='title'>
         <img src={pic_url} className='circled' />
         <span className='name'>{name}</span>
-        <span className='rate'>{rate} <i className='fa fa-star' /></span>
+        <span className='rate'><i className='fa fa-star'/> {rate} </span>
     </div>
     <div className='message mid-font-size'>
         {message}
@@ -16,6 +16,11 @@ const User = ({pic_url, image_url, name, message, people, rate, time})  =>
     <div className='pic'>
       <img src={image_url} />
       <span className='time'>{moment(time).format('HH:mm:ss')}</span>
+    </div>
+    <div className='accept'>
+      <div className='mid-font-size'><i className='fa fa-user'/>{people} people</div>
+      <button><i className='fa fa-anchor'/> ACCEPT</button>
+      <div className='mid-font-size'><i className='fa fa-share-alt'/>share</div>
     </div>
   </div>;
 
@@ -44,6 +49,6 @@ const Home = ({visible, users}) =>
           <User {...u} />
         </div>
       )}
-    </div>;
+  </div>;
 
 export default Home;
