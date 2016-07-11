@@ -1,0 +1,25 @@
+@import "./variables";
+
+.app {
+  height: 100%;
+
+  .topbar {
+    height: $topbar_height;
+    line-height: $topbar_height;
+
+    background: $front_color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 $default_padding;
+    box-sizing: border-box;
+    color: $text_color_0;
+
+    > span {
+      display: inline-block;
+      text-align: center;
+      flex-basis: 1;
+      i {padding: 0 $default_padding;}
+    }
+  }
+}
