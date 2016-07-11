@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 import {events} from '../state.js'
 import '!style!css!sass!../styles/home.scss';
 
@@ -11,6 +12,10 @@ const User = ({pic_url, image_url, name, message, people, rate, time})  =>
     </div>
     <div className='message mid-font-size'>
         {message}
+    </div>
+    <div className='pic'>
+      <img src={image_url} />
+      <span className='time'>{moment(time).format('HH:mm:ss')}</span>
     </div>
   </div>;
 
