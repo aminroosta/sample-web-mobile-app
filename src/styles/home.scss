@@ -2,11 +2,10 @@
 
 .app {
   height: 100%;
+
   .card {
     background: radial-gradient(at top, #FCF5E6 30% ,#FCF0DA 50%, #F1D6B3);
-    padding: $default_padding;
     box-sizing: border-box;
-    height: 4*$unit_height;
 
     .sub-menu {
       display: flex;
@@ -37,6 +36,38 @@
           color: $color_white;
         }
       }
+    }
+  }
+
+  .user {
+    > div {
+      padding: $default_padding;
+      box-sizing: border-box;
+    }
+    .title {
+      padding-top: $unit_height*0.5;
+      height: $unit_height*2;
+      position: relative;
+      span {
+        line-height: $unit_height*1.5;
+        padding: 0 $default_padding;
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: $big_size;
+        color: $front_color;
+
+        &.name { float: left; }
+        &.rate { float: right;}
+      }
+      .circled {
+        float: left;
+        border: 5px solid $front_color;
+      }
+    }/*----------.title--------------*/
+
+    .message {
+      line-height: $unit_height;
+      background: rgba(0,0,0, 0.05);
     }
   }
 

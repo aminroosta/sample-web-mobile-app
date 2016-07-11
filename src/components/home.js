@@ -2,7 +2,20 @@ import React from 'react'
 import {events} from '../state.js'
 import '!style!css!sass!../styles/home.scss';
 
-const Home = ({visible}) =>
+const User = ({pic_url, image_url, name, message, people, rate, time})  =>
+  <div className='user'>
+    <div className='title'>
+        <img src={pic_url} className='circled' />
+        <span className='name'>{name}</span>
+        <span className='rate'>{rate} <i className='fa fa-star' /></span>
+    </div>
+    <div className='message mid-font-size'>
+        {message}
+    </div>
+  </div>;
+
+
+const Home = ({visible, users}) =>
     <div className='app'>
       <div className='topbar'>
         <span><i className='fa fa-ellipsis-h'/> <i className='fa fa-wifi'/></span>
@@ -18,10 +31,14 @@ const Home = ({visible}) =>
           </div>
           <i className='fa fa-plus-circle fa-2x' onTouchTap={events.toggleMenu} />
         </div>
+        {users[0] && <User {...users[0]} /> } {/* first user */}
       </div>
-      <div className='card'>
-        <span onTouchTap={events.toggleMenu}> toggle menu </span>
-      </div>
+      {/* the rest of users */}
+      {users.slice(1).map(u =>
+        <div className='card'>
+          <User {...u} />
+        </div>
+      )}
     </div>;
 
 export default Home;

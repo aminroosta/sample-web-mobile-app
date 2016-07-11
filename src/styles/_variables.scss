@@ -14,10 +14,20 @@ $color_white: #FFFFFF;
 $color_dark: #383838;
 $text_color_1: #84909B;
 $text_color_2: #FBEFDF;
+$small_size: 14px;
 $normal_size: 16px;
 $mid_size: 18px;
-$big_size: 24px;
+$big_size: 22px;
+$bigger_size: 28px;
 $extra_size: 42px;
+
+
+.mid-font-size { font-size: $mid_size; }
+
+/* on smaller devices */
+@media only screen and (max-device-width: 360px) {
+  .mid-font-size { font-size: $small_size; }
+}
 
 $unit_height: 6.25vh;
 $card_color_0: #FCF5E6;
