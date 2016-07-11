@@ -2,6 +2,10 @@
 @import "compass";
 @import "./variables";
 
+html, body {
+  overflow: hidden;
+}
+
 .container {
   font-family: lato;
   width: 100%;
