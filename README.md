@@ -13,3 +13,7 @@ open http://localhost:3000
 npm install -g webpack // make sure webpack is installed globally
 npm run build
 ```
+
+### Demo
+You can see a live version [ghtihub gh-pages](http://aminroosta.ir/simplemobileapp/).  
+This is only optimized for mobile browsers (no fallback for desktop).
