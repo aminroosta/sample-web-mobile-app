@@ -1,0 +1,37 @@
+$menu_width: 75%;
+$menu_padding: 30px;
+$home_padding: 30px;
+$default_padding: 5px;
+$back_color_0: #303D4C;
+$back_color_1: #2B3744;
+$back_color_2: #2C3948;
+$back_color_3: #2E3C49;
+$back_color_4: #848484;
+$buttons_back: #F2E5D5;
+
+$front_color: #FD7F6A;
+$color_white: #FFFFFF;
+$color_dark_blue: #2A3848;
+$color_dark: #383838;
+$text_color_1: #84909B;
+$text_color_2: #FBEFDF;
+$small_size: 14px;
+$normal_size: 16px;
+$mid_size: 18px;
+$big_size: 22px;
+$bigger_size: 28px;
+$extra_size: 42px;
+
+
+.mid-font-size { font-size: $mid_size; }
+
+/* on smaller devices */
+@media only screen and (max-device-width: 360px) {
+  .mid-font-size { font-size: $small_size; }
+}
+
+$unit_height: 5.5vh;
+$card_color_0: #FCF5E6;
+$card_color_1: #FCF0DA;
+$card_color_2: #F1D6B3;
+$icon_2x_height: 28px;
