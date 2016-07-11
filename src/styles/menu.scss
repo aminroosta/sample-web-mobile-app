@@ -7,4 +7,45 @@
   position: absolute;
   top: 0;
   left: - $menu_width;
+
+  .info {
+    height: 40%;
+    width: calc(100% - 30px);
+    margin: auto;
+    text-align: center;
+
+    .user {
+      padding: 15px 15%;
+      box-sizing: border-box;
+
+      > span {
+        color: $text_color_1;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+
+        &.name {
+          font-size: $big_size;
+        }
+      }
+
+    } /*----------.user-------- */
+
+    button {
+      width: 100%;
+      max-width: 250px;
+      height: $extra_size;
+      border:none;
+      border-radius: $extra_size/5;
+      background-color: $front_color;
+      color: $text_color_0;
+      outline: none;
+      cursor: pointer;
+      font-size: $mid_size;
+      font-weight: bold;
+    }
+
+  }
+
 }
