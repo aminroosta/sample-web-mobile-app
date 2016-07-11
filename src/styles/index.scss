@@ -1,17 +1,31 @@
 @import "compass/reset";
 @import "compass";
-
-$desktop-width: 1200px;
-
-$start: #FFFFFF;
-$end: #F5F8FB;
+@import "./variables";
 
 .container {
-  font: Roboto;
-  margin: auto;
-  padding: 20px 10px;
-  box-sizing: border-box;
-  margin-top: 100px; // TODO: remove
-  width: $desktop-width;
-  @include background-image(linear-gradient(to top left, $start, $end));
+  width: 100%;
+  height: 500px; /* Temp */
+  position: relative;
+
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+
+
+  &.show-menu {
+    -webkit-transform: translateX($menu_width);
+    transform: translateX($menu_width);
+  }
+
+  padding: 5% 0; /* Temp: Just spacing. */
+}
+
+.menu {
+  width: $menu_width;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: - $menu_width;
+  background: #428bca;
 }

@@ -31,8 +31,9 @@
   "dependencies": {
     "compass-mixins": "^0.12.10",
     "file-loader": "^0.8.5",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
-    "react-inlinesvg": "^0.5.1"
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-inlinesvg": "^0.5.1",
+    "react-tap-event-plugin": "^1.0.0"
   }
 }
