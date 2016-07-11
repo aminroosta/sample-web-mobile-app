@@ -8,6 +8,7 @@
     box-sizing: border-box;
 
     .sub-menu {
+      padding: $default_padding;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
