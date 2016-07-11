@@ -13,7 +13,7 @@ const Menu = () =>
         <span>Bet rate 116 <span className='star-icon'/></span>
       </div>
 
-      <button> <span className='plus-icon'/> CREATE CHALLANGE </button>
+      <button> <i className='fa fa-plus-circle'/> CREATE CHALLANGE </button>
     </div>
   </div>;
 

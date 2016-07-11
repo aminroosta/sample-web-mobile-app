@@ -5,7 +5,7 @@ import { render } from 'react-dom'
 import injectTapEventPlugin from "react-tap-event-plugin"
 injectTapEventPlugin();
 import '!style!css!sass!./styles/index.scss';
-import '!style!css!../node_modules/font-awesome/css/font-awesome.min.css'
+import '!style!css!../node_modules/font-awesome/css/font-awesome.min.css';
 
 import {controller, events} from './state.js'
 import Menu from './components/menu.js'
