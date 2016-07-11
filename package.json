@@ -31,6 +31,7 @@
   "dependencies": {
     "compass-mixins": "^0.12.10",
     "file-loader": "^0.8.5",
+    "lato-font": "^1.1.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-inlinesvg": "^0.5.1",
