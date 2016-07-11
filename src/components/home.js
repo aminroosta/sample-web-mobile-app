@@ -49,6 +49,7 @@ const Home = ({visible, users}) =>
           <User {...u} />
         </div>
       )}
+    <div className={`overlay ${visible && 'visible'}`}  onTouchTap={events.toggleMenu}></div>
   </div>;
 
 export default Home;

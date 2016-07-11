@@ -22,7 +22,7 @@ class Container extends React.Component {
   render = () =>
     <div className={`container ${this.state.menu.visible && 'show-menu'}`}>
       <Menu {...this.state.menu} />
-      <Home {...this.state.home}/>
+      <Home {...this.state.home} visible={this.state.menu.visible}/>
     </div>;
 }
 
