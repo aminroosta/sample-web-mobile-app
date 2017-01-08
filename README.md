@@ -1,5 +1,6 @@
 Simple Mobile App
 =====================
+Build using react :-)
 
 ### Usage
 
@@ -14,6 +15,13 @@ npm install -g webpack // make sure webpack is installed globally
 npm run build
 ```
 
+# Screens
+
+<img src="images/a.png" alt="Home" width="350" height="668">
+
+<img src="images/b.png" alt="Side Menu" width="350" height="668">
+
 ### Demo
 You can see a live version [ghtihub gh-pages](http://aminroosta.ir/simplemobileapp/).  
-This is only optimized for mobile browsers (no fallback for desktop).
+This is only optimized for mobile browsers (no fallback for desktop right now).
+
